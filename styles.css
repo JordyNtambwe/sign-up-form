@@ -41,6 +41,7 @@ body {
   position: absolute;
   top: 20%;
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 15px;
   background-color: rgba(0, 0, 0, 0.6);
@@ -51,7 +52,6 @@ body {
 .odin-head {
   height: 250px;
   width: auto;
-  padding-left: 180px;
 }
 
 .title {
