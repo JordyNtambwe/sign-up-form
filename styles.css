@@ -1,6 +1,9 @@
+html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -19,10 +22,15 @@ body {
   font-display: swap;
 }
 
+.home {
+  display: flex;
+}
+
 .left-container {
   position: relative;
   height: 100vh;
   width: 40%;
+  overflow: hidden;
 }
 
 .left-content {
@@ -32,7 +40,7 @@ body {
 }
 
 .green-leaf-plant {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: absolute;
 }
@@ -50,7 +58,7 @@ body {
 }
 
 .odin-head {
-  height: 250px;
+  height: 200px;
   width: auto;
 }
 
@@ -59,4 +67,87 @@ body {
   color: white;
   font-size: 140px;
   margin: 0px;
+}
+
+.right-container p{
+  font-size: 30px;
+  font-weight: bold;
+}
+.right-container > p {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.right-content p {
+  color: rgb(36, 36, 36);
+}
+
+.right-container {
+  padding-top: 150px;
+  width: 60%;
+}
+
+.right-content {
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  padding: 30px 0px 0px 50px;
+}
+
+.full-name,
+.communication,
+.security {
+  display:flex;
+  padding-bottom: 30px;
+  gap: 50px;
+  max-width: 700px;
+}
+
+.input-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+label,
+input {
+  font-size: 20px;
+}
+
+input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input:focus {
+  border-color: blue;
+  outline: 1px solid blue;
+}
+
+input:user-invalid {
+  border-color: red;
+  outline: 1px solid red;
+}
+
+.sign-up-info {
+  padding: 50px;
+}
+
+button {
+  font-size: 20px;
+  padding: 15px 60px;
+  border: none;
+  border-radius: 10px;
+  background-color: #596D48;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.sign-up-info p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a {
+  color: #596D48;
 }
